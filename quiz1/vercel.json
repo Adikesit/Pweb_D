@@ -1,0 +1,8 @@
+{
+  "rewrites": [
+    {
+      "source": "/quiz1/(.*)",
+      "destination": "/$1"
+    }
+  ]
+}
