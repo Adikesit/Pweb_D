@@ -186,15 +186,18 @@ h1 span {
 }
 
 h2{
+  font-size: larger;
   color: var(--main-darker);
   font-family: var(--serif);
 }
 h3 {
+  font-size: larger;
   color: var(--main-dark);
   font-family: var(--serif);
 }
 
 p {
+  font-size: larger;
   color: var(--main);
   font-family: var(--serif);
 }
