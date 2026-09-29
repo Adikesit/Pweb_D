@@ -1,0 +1,200 @@
+@import url("https://fonts.googleapis.com/css?family=Abril+Fatface|Oswald:200,400|Playfair+Display:400,400i");
+
+:root {
+  --bold: "Oswald", sans-serif;
+  --abril: "Abril Fatface", serif;
+  --serif: "Playfair Display", serif;
+
+  --white: #f2f4f1;
+  --main: #c58b3c;
+  --main-light: #ca9140;
+  --main-dark: #6b5f57;
+  --main-darker: #432110;
+  --dark: #333333;
+
+  --ease-slow: all 0.4s ease-out;
+}
+
+body {
+  margin: 0;
+  background-color: var(--main-light);
+}
+
+a {
+  text-decoration: none;
+  color: var(--main);
+}
+
+a:hover {
+  background: var(--main);
+  color: var(--dark);
+}
+
+.sticky {
+  position: fixed;
+  z-index: 10;
+}
+
+.navbar--container {
+  top: 15%;
+  background: var(--white);
+  height: 220px;
+  width: 90px;
+  box-shadow: 2px 2px 15px rgba(51, 51, 51, 0.1);
+}
+
+.navbar--icon {
+  margin-top: 24px;
+  margin-left: 38px;
+  font-size: 1em;
+}
+
+.navbar--icon:hover {
+  color: var(--main);
+  cursor: pointer;
+}
+
+.navbar--title {
+  margin-left: 16px;
+  margin-top: 35px;
+}
+
+.navbar--title h4 {
+  writing-mode: vertical-rl;
+  font-family: var(--bold);
+  letter-spacing: 0.34em;
+  text-transform: uppercase;
+  font-size: 0.9em;
+}
+
+/* Navigation Open */
+.nav--open {
+  height: 100vh;
+  width: 300px;
+  background: var(--white);
+  transition: var(--ease-slow);
+  opacity: 1;
+  box-shadow: 2px 2px 15px rgba(51, 51, 51, 0.1);
+}
+
+.nav--open-icon {
+  text-align: right;
+  padding: 20px;
+}
+
+.nav--open-icon i {
+  font-size: 1.8em;
+  color: var(--main);
+}
+
+.nav--open-icon i:hover {
+  color: var(--dark);
+  cursor: pointer;
+}
+
+.nav--open-title {
+  font-family: var(--serif);
+  font-size: 0.8em;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  text-align: center;
+  margin-top: 35%;
+}
+
+.nav--open-menu {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.nav--open-menu a {
+  font-size: 2em;
+  font-weight: 100;
+  font-family: var(--serif);
+  padding: 15px 0;
+}
+
+.close {
+  transform: translateX(-300px);
+  transition: var(--ease-slow);
+  opacity: 0;
+}
+
+section {
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.one {
+  display: flex;
+  position: relative;
+  background: var(--main-light);
+  margin: auto;
+}
+
+.two {
+  background: var(--white);
+  padding-top: 75px;
+  clear: both;
+}
+
+.three {
+  background: var(--main-dark);
+}
+
+.four {
+  background: var(--main-darker);
+}
+
+h1 {
+  font-family: var(--abril);
+  margin: 0;
+  line-height: 1em;
+  font-weight: 100;
+  color: var(--white);
+  font-size: 3.5em;
+  text-align: center;
+}
+
+h1 span {
+  font-style: var(--serif);
+  text-decoration: underline;
+  color: var(--main-darker);
+}
+
+.light {
+  color: var(--main-light);
+}
+
+.underline {
+  text-decoration: underline;
+}
+
+.bordered{
+  border: solid;
+}
+
+.foto{
+  width: 100%;
+  aspect-ratio: 4/5;
+}
+
+h2{
+  color: var(--main-darker);
+  font-family: var(--serif);
+}
+h3 {
+  color: var(--main-dark);
+  font-family: var(--serif);
+}
+
+p {
+  color: var(--main);
+  font-family: var(--serif);
+}
