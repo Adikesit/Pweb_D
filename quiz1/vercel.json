@@ -1,8 +1,13 @@
 {
-  "rewrites": [
+  "routes": [
     {
-      "source": "/quiz1/(.*)",
-      "destination": "/$1"
+      "src": "/quiz1/(.*)",
+      "dest": "/$1"
+    },
+    {
+      "src": "/(?!quiz1/)(.*)",
+      "status": 301,
+      "headers": { "Location": "/quiz1/$1" }
     }
   ]
 }
